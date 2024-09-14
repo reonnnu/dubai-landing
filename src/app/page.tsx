@@ -8,6 +8,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { ChevronRight, Check, X } from 'lucide-react'
 import Head from 'next/head'
 
+
 export default function LandingPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isButtonAnimated, setIsButtonAnimated] = useState(false)
