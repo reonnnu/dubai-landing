@@ -53,7 +53,7 @@ export default function LandingPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@LogicalX_Dubai" />
         <link rel="canonical" href="https://dubai-research.com" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/icon.png" />
       </Head>
 
       {/* ヘッダー */}
