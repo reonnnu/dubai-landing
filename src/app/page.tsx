@@ -160,8 +160,8 @@ export default function LandingPage() {
                   <div className="wistia_embed wistia_async_wu9gjdinne seo=true videoFoam=true" style={{height:'100%', position:'relative', width:'100%'}}>
                     <div className="wistia_swatch" style={{height:'100%', left:0, opacity:0, overflow:'hidden', position:'absolute', top:0, transition:'opacity 200ms', width:'100%'}}>
                       <img src="https://fast.wistia.com/embed/medias/wu9gjdinne/swatch" style={{filter:'blur(5px)', height:'100%', objectFit:'contain', width:'100%'}} alt="" aria-hidden="true" onLoad={(e) => {
-                        const parentNode = e.currentTarget.parentNode;
-                        if (parentNode && 'style' in parentNode) {
+                        const parentNode = e.currentTarget.parentNode as HTMLElement;
+                        if (parentNode) {
                           parentNode.style.opacity = '1';
                         }
                       }} />
