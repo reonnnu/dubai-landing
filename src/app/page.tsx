@@ -5,13 +5,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { ChevronRight, Check, Play, X } from 'lucide-react'
+import { ChevronRight, Check, X } from 'lucide-react'
 import Head from 'next/head'
-
 
 export default function LandingPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -705,7 +700,7 @@ export default function LandingPage() {
                       <p className="text-xs text-gray-600">{testimonial.age}、{testimonial.occupation}</p>
                     </div>
                   </div>
-                  <p className="text-gray-700 text-sm mb-3">"{testimonial.comment}"</p>
+                  <p className="text-gray-700 text-sm mb-3">&quot;{testimonial.comment}&quot;</p>
                   <div className="mb-3">
                     <h4 className="font-semibold text-sm mb-2">ポイント：</h4>
                     <ul className="list-disc list-inside text-sm text-gray-600">
