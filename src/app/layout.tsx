@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Head from 'next/head';
+import Script from 'next/script';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   title: "ドバイ総合研究所 by Logical X - ドバイ移住・不動産購入/会計サポート",
   description: "ドバイ総合研究所が、法人設立/不動産購入/ビザ取得/税務/海外移住まで、あなたのドバイ移住を全力サポートします。",
   openGraph: {
-    url: "https://dubai-research.com",
+    url: "https://lp.getfr33.com",
     title: "ドバイ総合研究所 by Logical X - ドバイ移住・不動産購入サポート",
     description: "ドバイ総合研究所が、法人設立/不動産購入/ビザ取得/税務/海外移住まで、あなたのドバイ移住を全力サポートします。",
     images: [
@@ -47,7 +48,7 @@ export default function RootLayout({
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://dubai-research.com" />
+        <link rel="canonical" href="https://lp.getfr33.com" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <body
@@ -55,6 +56,15 @@ export default function RootLayout({
       >
         {children}
         <SpeedInsights />
+        <Script id="microsoft-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "o1vx3tg2e2");
+          `}
+        </Script>
       </body>
     </html>
   );

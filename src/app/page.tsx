@@ -43,7 +43,7 @@ export default function LandingPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>ドバイ総合研究所 by Logical X - ドバイ移住・不動産購入/会計サポート</title>
         <meta name="description" content="ドバイ総合研究所が、法人設立/不動産購入/ビザ取得/税務/海外移住まで、あなたのドバイ移住を全力サポートします。" />
-        <meta property="og:url" content="https://dubai-research.com" />
+        <meta property="og:url" content="https://lp.getfr33.com" />
         <meta property="og:title" content="ドバイ総合研究所 by Logical X - ドバイ移住・不動産購入サポート" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content="ドバイ総合研究所が、法人設立/不動産購入/ビザ取得/税務/海外移住まで、あなたのドバイ移住を全力サポートします。" />
@@ -52,7 +52,7 @@ export default function LandingPage() {
         <meta property="og:locale" content="ja_JP" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@LogicalX_Dubai" />
-        <link rel="canonical" href="https://dubai-research.com" />
+        <link rel="canonical" href="https://lp.getfr33.com" />
         <link rel="icon" href="/icon.png" />
       </Head>
 
