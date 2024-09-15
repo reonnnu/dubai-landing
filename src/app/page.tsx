@@ -450,7 +450,7 @@ export default function LandingPage() {
             <Card className="border-primary">
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold mb-4">スタンダード</h3>
-                <p className="text-3xl font-bold mb-2">48,000 AED<span className="text-lg font-normal">（約172万円）</span></p>
+                <p className="text-3xl font-bold mb-2">48,000 AED<span className="text-lg font-normal">（約184万円）</span></p>
                 <p className="text-green-600 font-semibold mb-2">ビザ1名様の価格</p>
                 <p className="text-sm text-gray-600 mb-6">※ビザの枚数によっては変動あり。詳しくはLINEでお問い合わせください。</p>
                 <ul className="space-y-2 mb-6">
