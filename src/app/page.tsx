@@ -9,6 +9,45 @@ import { ChevronRight, Check, X } from 'lucide-react'
 import Head from 'next/head'
 
 
+// FooterCTA コンポーネントの定義
+const FooterCTA = () => {
+  const [isButtonAnimated, setIsButtonAnimated] = useState(false)
+
+  useEffect(() => {
+    const animationInterval = setInterval(() => {
+      setIsButtonAnimated(true)
+      setTimeout(() => setIsButtonAnimated(false), 1000)
+    }, 5000)
+
+    return () => clearInterval(animationInterval)
+  }, [])
+
+  return (
+    <div className="fixed bottom-0 left-0 right-0 bg-white p-4 shadow-lg md:hidden z-50">
+      <div className="relative">
+        <div className="absolute -top-8 left-0 right-0 text-center">
+          <span className="inline-block bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full animate-pulse">
+            ＼今なら！無料で実施中／
+          </span>
+        </div>
+        <div className={`absolute inset-0 bg-[#06C755] opacity-75 blur-lg transition-all duration-300 ${isButtonAnimated ? 'scale-110' : 'scale-100'}`}></div>
+        <Button 
+          size="lg" 
+          className={`relative w-full bg-[#06C755] hover:bg-[#05A847] transition-all duration-300 transform hover:scale-105 shadow-lg ${isButtonAnimated ? 'animate-pulse' : ''}`}
+        >
+          <a href="https://s.lmes.jp/landing-qr/2001137955-jWxrM6pe?uLand=3vYW85" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center px-4 py-2 text-base font-bold text-white">
+            1時間のドバイ移住コンサルティングをLINEで予約
+            <ChevronRight className="ml-2 h-4 w-4" />
+          </a>
+        </Button>
+        <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full animate-bounce">
+          今すぐ予約！
+        </span>
+      </div>
+    </div>
+  )
+}
+
 export default function LandingPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isButtonAnimated, setIsButtonAnimated] = useState(false)
@@ -228,51 +267,52 @@ export default function LandingPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">メディア掲載実績</h2>
-          <div className="flex flex-col md:flex-row items-stretch justify-center space-y-8 md:space-y-0 md:space-x-8">
-            <div className="w-full md:w-1/2 bg-gray-100 rounded-lg shadow-md p-6 flex flex-col">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-gray-100 rounded-lg shadow-md p-6 flex flex-col">
               <div className="mb-4 flex justify-center">
                 <img 
                   src="http://logicalx.co/wp-content/uploads/2024/09/FPAN1YEaQAIFro-.jpg" 
                   alt="ABEMA Prime ロゴ" 
-                  className="h-12"
+                  className="h-12 object-contain"
                 />
               </div>
               <div className="flex-grow mb-4">
                 <img 
                   src="https://getfr33.com/wp-content/uploads/2024/04/72fe13c1568b89b547e541d4d4bf5e2c.jpg" 
                   alt="ABEMA Prime 特集" 
-                  className="w-full h-auto object-cover rounded-lg shadow"
+                  className="w-full h-48 object-cover rounded-lg shadow"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-center">ABEMA Primeで特集されました</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-sm">
                 2024年4月24日放送の「ABEMA Prime」に弊社の移住コンサルタント鈴木結が出演しました。「なぜドバイに人は集まるのか」をテーマに、税制や治安、生活状況などについて議論を行いました。
               </p>
             </div>
-            <div className="w-full md:w-1/2 bg-gray-100 rounded-lg shadow-md p-6 flex flex-col">
+            <div className="bg-gray-100 rounded-lg shadow-md p-6 flex flex-col">
               <div className="mb-4 flex justify-center">
                 <img 
                   src="http://getfr33.com/wp-content/uploads/2024/09/Yahoo_News_Japan_logo.png" 
                   alt="Yahoo! JAPAN ニュース ロゴ" 
-                  className="h-12"
+                  className="h-12 object-contain"
                 />
               </div>
               <div className="flex-grow mb-4">
                 <img 
                   src="http://getfr33.com/wp-content/uploads/2024/09/2024-09-12_09h23_42.jpg" 
                   alt="Yahoo! JAPAN ニュース 記事スクリーンショット" 
-                  className="w-full h-auto object-cover rounded-lg shadow"
-                  style={{aspectRatio: '16/9'}}
+                  className="w-full h-48 object-cover rounded-lg shadow"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-center">Yahoo! JAPANニュースで紹介されました</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-sm">
                 弊社の記事がYahoo! JAPANニュースに取り上げられました。ドバイ移住に関する最新の情報や、弊社のサービスについて詳しく紹介されています。
               </p>
             </div>
           </div>
         </div>
       </section>
+
+   
 
       <section className="py-20 bg-blue-50">
         <div className="container mx-auto px-4">
@@ -972,7 +1012,7 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
+      <FooterCTA />
       {/* フッター */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
