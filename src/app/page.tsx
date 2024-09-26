@@ -35,7 +35,7 @@ const FooterCTA = () => {
           size="lg" 
           className={`relative w-full bg-[#06C755] hover:bg-[#05A847] transition-all duration-300 transform hover:scale-105 shadow-lg ${isButtonAnimated ? 'animate-pulse' : ''}`}
         >
-          <a href="https://s.lmes.jp/landing-qr/2001137955-jWxrM6pe?uLand=3vYW85" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center px-4 py-2 text-base font-bold text-white">
+          <a href="https://getfr33.com/lis-purrchase/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center px-4 py-2 text-base font-bold text-white">
             1時間のドバイ移住コンサルティングをLINEで予約
             <ChevronRight className="ml-2 h-4 w-4" />
           </a>
@@ -110,7 +110,7 @@ export default function LandingPage() {
             <a href="#founder" className="text-sm hover:text-primary transition-colors">創業者からの手紙</a>
           </nav>
           <Button className="hidden md:inline-flex bg-[#06C755] hover:bg-[#05A847] transition-colors duration-300">
-            <a href="https://s.lmes.jp/landing-qr/2001137955-jWxrM6pe?uLand=3vYW85" target="_blank" rel="noopener noreferrer">
+            <a href="https://getfr33.com/lis-purrchase/" target="_blank" rel="noopener noreferrer">
               無料カウンセリング予約
             </a>
           </Button>
@@ -137,7 +137,7 @@ export default function LandingPage() {
               <a href="#faq" className="text-sm hover:text-primary transition-colors">よくある質問</a>
               <a href="#founder" className="text-sm hover:text-primary transition-colors">創業者からの手紙</a>
               <Button className="w-full">
-                <a href="https://s.lmes.jp/landing-qr/2001137955-jWxrM6pe?uLand=3vYW85" target="_blank" rel="noopener noreferrer">
+                <a href="https://getfr33.com/lis-purrchase/" target="_blank" rel="noopener noreferrer">
                   無料カウンセリング予約
                 </a>
               </Button>
@@ -181,7 +181,7 @@ export default function LandingPage() {
                 size="lg" 
                 className={`relative w-full md:w-auto bg-gradient-to-r from-[#06C755] to-[#05A847] hover:from-[#05A847] hover:to-[#06C755] transition-all duration-300 transform hover:scale-105 shadow-lg ${isButtonAnimated ? 'animate-pulse' : ''}`}
               >
-                <a href="https://s.lmes.jp/landing-qr/2001137955-jWxrM6pe?uLand=3vYW85" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center px-8 py-4 text-lg font-semibold">
+                <a href="https://getfr33.com/lis-purrchase/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center px-8 py-4 text-lg font-semibold">
                   無料相談をLINEで予約する
                   <ChevronRight className="ml-2 h-5 w-5" />
                 </a>
@@ -991,7 +991,7 @@ export default function LandingPage() {
             size="lg" 
             className="bg-[#06C755] hover:bg-[#05A847] text-white font-bold py-4 px-8 rounded-full text-xl shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
           >
-            <a href="https://s.lmes.jp/landing-qr/2001137955-jWxrM6pe?uLand=3vYW85" target="_blank" rel="noopener noreferrer" className="flex items-center">
+            <a href="https://getfr33.com/lis-purrchase/" target="_blank" rel="noopener noreferrer" className="flex items-center">
               LINEで無料カウンセリングを予約
               <ChevronRight className="ml-2 h-6 w-6" />
             </a>
