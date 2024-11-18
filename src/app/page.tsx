@@ -198,29 +198,6 @@ export default function LandingPage() {
               <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png" alt="USDT" width={24} height={24} className="rounded-full" />
             </div>
           </div>
-          <div className="relative max-w-2xl mx-auto">
-            <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-[#54bbff] to-[#0073e6] text-white text-center py-1 z-10 rounded-t-lg">
-              <span className="text-xs font-semibold">詳しい内容を動画でチェック👇️</span>
-            </div>
-            <div className="aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-2xl">
-              <script src="https://fast.wistia.com/embed/medias/wu9gjdinne.jsonp" async></script>
-              <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-              <div className="wistia_responsive_padding" style={{padding:'56.25% 0 0 0', position:'relative'}}>
-                <div className="wistia_responsive_wrapper" style={{height:'100%', left:0, position:'absolute', top:0, width:'100%'}}>
-                  <div className="wistia_embed wistia_async_wu9gjdinne seo=true videoFoam=true" style={{height:'100%', position:'relative', width:'100%'}}>
-                    <div className="wistia_swatch" style={{height:'100%', left:0, opacity:0, overflow:'hidden', position:'absolute', top:0, transition:'opacity 200ms', width:'100%'}}>
-                      <img src="https://fast.wistia.com/embed/medias/wu9gjdinne/swatch" style={{filter:'blur(5px)', height:'100%', objectFit:'contain', width:'100%'}} alt="" aria-hidden="true" onLoad={(e) => {
-                        const parentNode = e.currentTarget.parentNode as HTMLElement;
-                        if (parentNode) {
-                          parentNode.style.opacity = '1';
-                        }
-                      }} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
       {/* 提携企業ロゴセクション */}
@@ -490,7 +467,7 @@ export default function LandingPage() {
             <Card className="border-primary">
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold mb-4">スタンダード</h3>
-                <p className="text-3xl font-bold mb-2">48,000 AED<span className="text-lg font-normal">（約184万円）</span></p>
+                <p className="text-3xl font-bold mb-2">お問い合わせください</p>
                 <p className="text-green-600 font-semibold mb-2">ビザ1名様の価格</p>
                 <p className="text-sm text-gray-600 mb-6">※ビザの枚数によっては変動あり。詳しくはLINEでお問い合わせください。</p>
                 <ul className="space-y-2 mb-6">
@@ -512,7 +489,7 @@ export default function LandingPage() {
                   </li>
                   <li className="flex items-center">
                     <Check className="mr-2 h-5 w-5 text-green-500" />
-                    <span>居住予定不動産の下見同行（1回）</span>
+                    <span>居住予定不動産の下見同行（2回）</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="mr-2 h-5 w-5 text-green-500" />
